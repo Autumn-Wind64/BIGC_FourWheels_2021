@@ -71,11 +71,3 @@ void EXTI_Init()
     exti_init(PORTC, 15, falling_down);   //HREF----PORTB22 端口外部中断初始化 ，上升沿触发中断，内部下拉
     endiscnt = 0;
 }
-void Image_Init()
-{
-    u32 i/*,j*/;
-    for (i = 0; i < CAMERA_SIZE; i++)
-    {
-        Buffer1[i] = 0;
-    }
-}

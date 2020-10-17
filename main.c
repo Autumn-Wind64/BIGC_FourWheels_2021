@@ -3,10 +3,13 @@
 #define OFF	0
 #include "common.h"
 #include "include.h"
+/************2018级自定义文件**********/
 #include "Statement.h"
 #include "FunctionDefinition.h"
 #include "FunctionDefinition2.h"
 #include "InitFunctionDefine.h"
+#include "ImageProcessing.h"
+/****************************************/
 
 
 //-----------------主函数--------------------

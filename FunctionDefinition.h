@@ -119,28 +119,7 @@ void RepeatTheOperation1()
 	}
 }
 
-void ImageAcquisition()
-{
-	Dis_num(90, 7, ii);//ºìÍâÖµ1100
-	ImageProc();
-	if (workmode == 2) {
-		oledcnt++;
-		if (oledcnt > 2) {
-			LCD_CLS();
-			oledcnt = 0;
-			oledimg();
-			Dis_num(90, 0, omuCount);
-			Dis_num(90, 1, omuOutCount);
-			Dis_num(90, 2, speedErrPre);
-			Dis_num(90, 3, AD_val_1);            //row_mid
-			Dis_num(90, 4, AD_val_2);          //brightval
-			Dis_num(90, 5, julicnt);
-			Dis_num(90, 6, biZhangFlag);
-		}
-	}
-	VSYN_Flag = 0;
-	EnableInterrupts;
-}
+
 
 void RepeatTheOperation2()
 {
